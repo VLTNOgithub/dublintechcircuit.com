@@ -19,6 +19,7 @@
     --blur: 10px;
 }
 
+/* ====== ANIMATIONS ====== */
 @keyframes pan {
     0% {
         transform: translateX(-25%);
@@ -28,15 +29,15 @@
     }
 }
 
-
+/* ====== GENERAL FORMATTING ====== */
 body {
     background-color: var(--background);
     color: var(--text);
     font-family: Verdana;
     font-size: var(--paragraph-text-size);
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     margin: 0px;
     padding: 0px;
@@ -44,6 +45,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+ul {
+    list-style-type: none;
+}
+
+p, button {
+    font-size: var(--normal-text-size);
+}
+
+h1 {
+    font-size: var(--header-text-size);
+    margin: 0;
 }
 
 button {
@@ -72,24 +91,6 @@ button:hover {
 button:active {
     color: var(--accent);
     box-shadow: inset 0 0 30px var(--secondary), 0 0 10px var(--accent);
-}
-
-a {
-    text-decoration: none;
-    color: var(--text);
-}
-
-ul {
-    list-style-type: none;
-}
-
-p, button {
-    font-size: var(--normal-text-size);
-}
-
-h1 {
-    font-size: var(--header-text-size);
-    margin: 0;
 }
 
 .scrolling-background::before {
@@ -124,6 +125,8 @@ h1 {
     align-items: center;
     justify-content: flex-end;
     padding: 8px 24px;
+    min-height: 5vh;
+    max-height: 5vh;
 }
 
 .navbar .links {
@@ -134,7 +137,7 @@ h1 {
     font-size: var(--small-text-size);
 }
 
-/* ====== HERO ====== */
+/* ====== SECTION ONE ====== */
 .section-one {
     display: flex;
     flex-direction: column;
@@ -142,37 +145,28 @@ h1 {
     justify-content: center;
     background: radial-gradient(rgb(from var(--background) r g b / 50%), rgba(from var(--background) r g b / 20%)), url("./assets/hero.png");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     flex: 1;
-    position: relative;
+    min-height: 93vh;
 }
 
 .hero {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%;
-    width: 60%;
+    height: 90%; /* 60%; */
+    width: 60%; /* 80%;*/
     background-color: rgb(from var(--secondary-dark) r g b / 70%);
     backdrop-filter: blur(var(--blur));
     box-shadow: inset 0 0 3vmax var(--secondary), 0 0 1vmax var(--secondary);
     border: 2px solid var(--primary);
     border-radius: 30px;
     gap: 16px;
-    padding: 16px;
-}
-
-@media (max-width: 1235px) {
-    .hero {
-        height: 60%;
-        width: 80%;
-    }
+    padding: 32px;
 }
 
 .hero h1 {
-    position: relative;
     font-size: var(--hero-text-size);
     text-align: center;
     text-shadow: 0px 0px 20px var(--primary);
@@ -183,4 +177,21 @@ h1 {
     font-size: var(--normal-text-size);
     text-shadow: 0px 0px 20px var(--secondary-dark);
     text-align: center;
+}
+
+/* ====== SECTION TWO ====== */
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* ====== SCALING STUFF ======*/
+@media (max-width: 1235px) {
+    .hero {
+        height: 60%;
+        width: 80%;
+    }
 }
