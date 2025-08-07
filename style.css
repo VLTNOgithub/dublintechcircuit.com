@@ -19,6 +19,16 @@
     --blur: 10px;
 }
 
+@keyframes pan {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+
 body {
     background-color: var(--background);
     color: var(--text);
@@ -46,7 +56,7 @@ button {
     min-height: 60px;
     color: var(--subtext);
     border-radius: 30px;
-    box-shadow: inset 0 0 15px 0px var(--secondary), 0 0 5px 0px var(--primary);
+    box-shadow: inset 0 0 15px var(--secondary), 0 0 5px var(--primary);
     border: 2px solid var(--primary);
     user-select: none;
     transition: 0.1s;
@@ -54,14 +64,14 @@ button {
 
 button:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 25px 0px var(--secondary), 0 0 8px 0px var(--accent);
+    box-shadow: inset 0 0 25px var(--secondary), 0 0 8px var(--accent);
     border: 2px solid var(--accent);
     color: white;
 }
 
 button:active {
     color: var(--accent);
-    box-shadow: inset 0 0 30px 0px var(--secondary), 0 0 10px 0px var(--accent);
+    box-shadow: inset 0 0 30px var(--secondary), 0 0 10px var(--accent);
 }
 
 a {
@@ -92,33 +102,20 @@ h1 {
     mask-repeat: repeat;
     mask-size: var(--pattern-size);
 
-    /* 3. Animate the MASK position */
     animation: pan 180s linear infinite;
 
     opacity: 25%;
 
-    /* Sizing and positioning */
     width: 200%;
     height: 100%;
 
     border-radius: 30px;
     
     z-index: -1;
-    
 }
 
 .scrolling-background {
     overflow: hidden;
-}
-
-/* Update the keyframes to animate 'mask-position' */
-@keyframes pan {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
 }
 
 /* ====== NAVBAR ====== */
@@ -158,9 +155,9 @@ h1 {
     justify-content: center;
     height: 90%;
     width: 60%;
-    background-color: rgb(from var(--secondary-dark) r g b / 50%);
+    background-color: rgb(from var(--secondary-dark) r g b / 70%);
     backdrop-filter: blur(var(--blur));
-    box-shadow: inset 0 0 15px 0px var(--secondary), 0 0 5px 0px var(--secondary);
+    box-shadow: inset 0 0 3vmax var(--secondary), 0 0 1vmax var(--secondary);
     border: 2px solid var(--primary);
     border-radius: 30px;
     gap: 16px;
