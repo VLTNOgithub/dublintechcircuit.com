@@ -10,7 +10,7 @@
     --secondary-transparent: rgb(from var(--secondary) r g b / 25%);
 
     --small-text-size: 1.6vmin;
-    --normal-text-size: 2.2vmin;
+    --normal-text-size: 2vmin;
     --header-text-size: 48px;
     --hero-text-size: 8vmax;
 
@@ -80,7 +80,7 @@ h1 {
 }
 
 button {
-    padding: 16px 32px;
+    padding: 12px 32px;
     text-transform: uppercase;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.4);
@@ -111,6 +111,7 @@ button:active {
     padding-right: 10vw;
     max-width: 80vw;
     min-height: 20vh;
+    flex: 1;
 }
 
 .scrolling-background::before {
@@ -161,17 +162,20 @@ strong:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 8px 24px;
-    min-height: 5vh;
-    max-height: 5vh;
+    min-height: 7vh;
+    max-height: 7vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 .navbar .links {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     gap: 24px;
     font-size: var(--small-text-size);
+    padding-right: 32px;
 }
 
 /* ====== SECTION ONE ====== */
@@ -180,7 +184,7 @@ strong:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(rgb(from var(--background) r g b / 60%), rgba(from var(--background) r g b / 30%)), url("./assets/hero.png");
+    background: linear-gradient(0deg, rgb(from var(--secondary-dark) r g b / 100%), rgb(from var(--secondary-dark) r g b / 60%) 10%, rgba(from var(--background) r g b / 30%)), url("./assets/hero.png");
     background-size: cover;
     background-position: top;
     flex: 1;
@@ -209,6 +213,8 @@ strong:hover {
     font-size: var(--normal-text-size);
     text-shadow: 0px 0px 20px var(--secondary-dark);
     text-align: center;
+    /* position: relative;
+    transform: translateX(-21px); */
 }
 
 /* ====== SECTION TWO ====== */
@@ -219,6 +225,7 @@ strong:hover {
     justify-content: space-around;
     flex: 1;
     padding: 64px;
+    background: linear-gradient(180deg, rgb(from var(--secondary-dark) r g b / 100%), rgb(from var(--secondary-dark) r g b / 60%) 10%, rgba(from var(--background) r g b / 30%));
 }
 
 /* ====== SCALING STUFF ======*/
