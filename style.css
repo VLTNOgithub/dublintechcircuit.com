@@ -110,8 +110,8 @@ button:active {
     padding-left: 10vw;
     padding-right: 10vw;
     max-width: 80vw;
-    min-height: 20vh;
     flex: 1;
+    position: relative;
 }
 
 .scrolling-background::before {
@@ -228,7 +228,44 @@ strong:hover {
     background: linear-gradient(180deg, rgb(from var(--secondary-dark) r g b / 100%), rgb(from var(--secondary-dark) r g b / 60%) 10%, rgba(from var(--background) r g b / 30%));
 }
 
-/* ====== SCALING STUFF ======*/
+.section-two .info::before {
+    content: "";
+    z-index: 0;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    min-width: 75vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.collage {
+    position: absolute;
+    width: 100%;
+    flex-shrink: 0;
+    opacity: 0.6;
+    padding: 20px;
+    transform: translateY(-250px);
+    z-index: -2;
+}
+
+.collage-sizer {
+    width: 5vw;
+}
+
+.collage-item {
+    width: 5vw;
+    margin: -5px;
+}
+
+.collage-item img {
+    display: block;
+    width: 10vw;
+    height: auto;
+    filter: grayscale(50%);
+}
+/* ====== SCALING STUFF ====== */
 @media (max-width: 1235px) {
     .hero {
         height: 60%;
