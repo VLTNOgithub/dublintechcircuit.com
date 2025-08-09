@@ -57,6 +57,7 @@
 .section-two .info {
     position: relative;
     transform: translateY(6vmax);
+    text-shadow: 0px 0px 20px var(--secondary-dark);
 }
 
 .collage {
