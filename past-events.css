@@ -1,0 +1,105 @@
+@import url("./general.css");
+
+#events-container {
+    color: #eee;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.event {
+    background: #000000;
+    border-radius: 30px;
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.event h2 {
+    color: var(--text);
+    font-size: var(--header-text-size);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.event .meta {
+    font-size: var(--small-text-size);
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.event .sponsors {
+    font-style: italic;
+}
+
+.event p {
+    font-size: var(--normal-text-size);
+}
+
+.splide {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.splide__slide {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.splide__track {
+    border-radius: 30px;
+}
+
+/* Custom styling for Splide arrows */
+.splide__arrow {
+    opacity: 1;
+    box-shadow: inset 0 0 10px var(--secondary), 0 0 5px var(--primary);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.splide__arrow svg {
+    fill: var(--text);
+}
+
+.splide__arrow:enabled:hover {
+    opacity: 1;
+    box-shadow: inset 0 0 15px var(--secondary), 0 0 8px var(--accent);
+}
+
+.splide__arrow:enabled:hover svg {
+    fill: var(--primary);
+}
+
+.splide__arrow:enabled:active {
+    opacity: 1;
+    box-shadow: inset 0 0 20px var(--secondary), 0 0 10px var(--accent);
+}
+
+.splide__arrow:enabled:active svg {
+    fill: var(--accent);
+}
+
+.splide__arrow:disabled {
+    opacity: 1;
+    box-shadow: inset 0 0 10px var(--secondary);
+}
+
+.splide__arrow:disabled svg {
+    fill: var(--secondary);
+}
+
+/* Custom styling for Splide pagination */
+.splide__pagination__page {
+    background: var(--secondary-dark);
+}
+
+.splide__pagination__page.is-active {
+    background: #bada55;
+}

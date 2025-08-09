@@ -1,5 +1,7 @@
-window.onload = () => {
+function setupCollage() {
     var collage = document.querySelector(".collage");
+
+    collage.style.position = "absolute";
 
     // First, watch the collage for all images to load
     imagesLoaded( collage, function() {
@@ -20,4 +22,8 @@ window.onload = () => {
             item.style.zIndex = Math.floor(Math.random() * 5);
         });
     });
+
+    collage.style.position = "absolute";
 }
+
+window.addEventListener('DOMContentLoaded', setupCollage);
