@@ -66,7 +66,9 @@ function Home() {
 
     return (
         <>
-            <div className="section-one">
+            <div className="section-one" style={{
+                backgroundImage: `linear-gradient(0deg, rgb(from var(--secondary-dark) r g b / 100%), rgb(from var(--secondary-dark) r g b / 60%) 10%, rgba(from var(--background) r g b / 30%)), url(/hero.png)`
+            }}>
                 <div className="hero">
                     <h1>DUBLIN TECH CIRCUIT</h1>
                     <p>Communicate <strong>|</strong> Collaborate <strong>|</strong> Compete</p>
