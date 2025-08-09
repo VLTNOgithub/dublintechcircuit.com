@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 501" width="500" height="500">
+	<title>mario-star</title>
+	<defs>
+		<image width="324" height="324" id="img1" href="data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBkYXRhLWJib3g9IjAgMCAzMjMuMjk1IDMyMy4yOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyMy4yOTUgMzIzLjI5NiIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgYXJpYS1sYWJlbD0iIj4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Ik0xNjEuNjQ3IDBsNTcuMTUxIDEwNC40OTcgMTA0LjQ5NyA1Ny4xNS0xMDQuNDk3IDU3LjE1Mi01Ny4xNTEgMTA0LjQ5Ny01Ny4xNS0xMDQuNDk3TDAgMTYxLjY0N2wxMDQuNDk3LTU3LjE1TDE2MS42NDcgMHoiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+"/>
+	</defs>
+	<style>
+	</style>
+	<use id="star" href="#img1" transform="matrix(.458,-0.122,.122,.458,156.159,446.754)"/>
+	<use id="star copy 2" href="#img1" transform="matrix(.458,-0.122,.122,.458,-93.841,195.754)"/>
+	<use id="star copy 3" href="#img1" transform="matrix(.458,-0.122,.122,.458,406.159,195.754)"/>
+	<use id="star copy" href="#img1" transform="matrix(.458,-0.122,.122,.458,156.159,-54.246)"/>
+</svg>
