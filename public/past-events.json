@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Dublin Tech Circuit Pilot Event",
+    "venue": "Marian College, Ballsbridge",
+    "sponsors": ["Google", "Learnovate", "Simple Study", "Raspberry Pi Foundation"],
+    "date": "13th May 2025",
+    "description": "The event saw 66 students, across 9 different tech teams, with Drimnagh Castle team winning the overall title. The pilot event included STEM based activities. The success of the event strengthened our vision of Dublin Tech Circuit.",
+    "images": [
+      "./assets/collage/collage01.png",
+      "./assets/collage/collage02.png"
+    ]
+  },
+  {
+    "title": "SAMPLE EVENT",
+    "venue": "Venue here",
+    "sponsors": ["Sponsors here"],
+    "date": "15th November 2024",
+    "description": "Description here",
+    "images": []
+  }
+]
