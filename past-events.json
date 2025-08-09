@@ -11,11 +11,11 @@
     ]
   },
   {
-    "title": "Dublin Tech Circuit Annual Challenge 2024",
-    "venue": "TechHub Dublin",
-    "sponsors": ["Microsoft", "Intel"],
+    "title": "SAMPLE EVENT",
+    "venue": "Venue here",
+    "sponsors": ["Sponsors here"],
     "date": "15th November 2024",
-    "description": "Over 100 students participated in various robotics and programming challenges, pushing the limits of innovation and teamwork.",
+    "description": "Description here",
     "images": []
   }
 ]
