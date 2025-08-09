@@ -141,7 +141,7 @@ button:disabled {
     position: absolute;
     background-color: var(--secondary);
 
-    mask-image: url("../tiled-stars.svg");
+    mask-image: url("../public/tiled-stars.svg");
     mask-repeat: repeat;
     mask-size: var(--pattern-size);
 

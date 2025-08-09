@@ -22,7 +22,7 @@ function Home() {
                 if (loadedImages === totalImages) {
                     console.log("All images loaded, now running Masonry!");
 
-                    const msnry = new Masonry(collage, {
+                    new Masonry(collage, {
                         itemSelector: ".collage-item",
                         percentPosition: true,
                         columnWidth: ".collage-sizer"
