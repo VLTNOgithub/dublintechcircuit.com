@@ -78,16 +78,42 @@ function Home() {
 
             <div className="section-two">
                 <div className="narrow">
-                    <div className="info">
-                        <h1>What is Dublin Tech Circuit?</h1>
-                        <p>
-                            <span className="quote">"Just like every school in Ireland has a GAA team, it's time for schools to have a tech team."</span><br /><br />
-                            Dublin Tech Circuit is Ireland's first every post-primary <strong>student-led</strong> community of technology enthusiasts that fosters
-                            <strong> peer-to-peer learning</strong> through <strong>intra-school collaboration</strong> and <strong>inter-school competition</strong>,
-                            covering all things related to <strong>technology</strong>.
-                        </p>
+                    <div className="content-wrapper">
+                        <div className="info">
+                            <h1>What is Dublin Tech Circuit?</h1>
+                            <p>
+                                <span className="quote">"Just like every school in Ireland has a GAA team, it's time for schools to have a tech team."</span><br /><br />
+                                Dublin Tech Circuit is Ireland's first every post-primary <strong>student-led</strong> community of technology enthusiasts that fosters
+                                <strong> peer-to-peer learning</strong> through <strong>intra-school collaboration</strong> and <strong>inter-school competition</strong>,
+                                covering all things related to <strong>technology</strong>.
+                            </p>
+                        </div>
+
+                        <div className="movement-card">
+                            <div className="movement-background">
+                                <div className="scrolling-background">
+                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/48a04744d3b360fc80d73049956da1cb924375f7?width=400" alt="" />
+                                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/aee5fe23ab108be0a65bd574ca52a68f1bac7ff2?width=400" alt="" />
+                                </div>
+                            </div>
+                            <div className="movement-text">
+                                <div className="movement-line">
+                                    <span className="movement-regular">A </span>
+                                    <span className="movement-highlight">movement</span>
+                                </div>
+                                <div className="movement-line">
+                                    <span className="movement-regular">by </span>
+                                    <span className="movement-highlight">teens</span>
+                                    <span className="movement-regular">,</span>
+                                </div>
+                                <div className="movement-line">
+                                    <span className="movement-regular">for </span>
+                                    <span className="movement-highlight">teens</span>
+                                    <span className="movement-regular">.</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className=""></div>
                 </div>
                 <div className="collage" ref={collageRef}>
                     <div className="collage-sizer"></div>
