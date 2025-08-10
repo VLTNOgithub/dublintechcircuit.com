@@ -96,6 +96,109 @@ function Home() {
             </div>
 
             <div className="section-three">
+                <div className="narrow">
+                    <div className="upcoming-events">
+                        <h2>Upcoming Events</h2>
+                        <div className="events-grid">
+                            <div className="event-card styled-shape">
+                                <div className="event-date">
+                                    <span className="month">FEB</span>
+                                    <span className="day">15</span>
+                                </div>
+                                <div className="event-info">
+                                    <h3>Winter Tech Championship 2025</h3>
+                                    <p>Join us for an exciting day of coding challenges, robotics competitions, and innovation showcases.</p>
+                                    <span className="event-location">📍 Trinity College Dublin</span>
+                                </div>
+                            </div>
+                            <div className="event-card styled-shape">
+                                <div className="event-date">
+                                    <span className="month">APR</span>
+                                    <span className="day">12</span>
+                                </div>
+                                <div className="event-info">
+                                    <h3>Spring Innovation Summit</h3>
+                                    <p>Present your tech projects to industry leaders and compete for the Innovation Award.</p>
+                                    <span className="event-location">📍 Dublin City University</span>
+                                </div>
+                            </div>
+                            <div className="event-card styled-shape">
+                                <div className="event-date">
+                                    <span className="month">MAY</span>
+                                    <span className="day">20</span>
+                                </div>
+                                <div className="event-info">
+                                    <h3>Dublin Coding Marathon</h3>
+                                    <p>24-hour hackathon featuring teams from across Dublin's secondary schools.</p>
+                                    <span className="event-location">📍 Google Dublin HQ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="section-four">
+                <div className="narrow">
+                    <div className="sponsors-section">
+                        <h2>Our Amazing Partners</h2>
+                        <p>Dublin Tech Circuit is proudly supported by industry leaders who believe in the power of student-led tech education.</p>
+                        <div className="sponsors-grid">
+                            <div className="sponsor-card">
+                                <img src="/google.webp" alt="Google" />
+                                <h4>Google</h4>
+                                <p>Supporting innovation and providing mentorship opportunities</p>
+                            </div>
+                            <div className="sponsor-card">
+                                <img src="/learnovate.svg" alt="Learnovate" />
+                                <h4>Learnovate</h4>
+                                <p>Educational technology research and development partner</p>
+                            </div>
+                            <div className="sponsor-card">
+                                <img src="/raspberrypi.svg" alt="Raspberry Pi Foundation" />
+                                <h4>Raspberry Pi Foundation</h4>
+                                <p>Providing hardware and resources for hands-on learning</p>
+                            </div>
+                            <div className="sponsor-card">
+                                <img src="/simplestudy.svg" alt="Simple Study" />
+                                <h4>Simple Study</h4>
+                                <p>Educational platform supporting student success</p>
+                            </div>
+                            <div className="sponsor-card">
+                                <img src="/codetales.svg" alt="CodeTales" />
+                                <h4>CodeTales</h4>
+                                <p>Coding education and storytelling through technology</p>
+                            </div>
+                            <div className="sponsor-card">
+                                <img src="/tap.png" alt="TAP" />
+                                <h4>TAP</h4>
+                                <p>Technical assistance and mentorship programs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="section-five">
+                <div className="narrow">
+                    <div className="cta-section">
+                        <div className="styled-shape cta-card">
+                            <h2>Ready to Join the Revolution?</h2>
+                            <p>
+                                Be part of Ireland's premier student-led tech community. Connect with like-minded students,
+                                compete in exciting challenges, and prepare for a future in technology.
+                            </p>
+                            <div className="cta-buttons">
+                                <button onClick={() => window.location.href = '/register'}>
+                                    Register Now
+                                </button>
+                                <button onClick={() => window.location.href = '/about'} className="secondary-btn">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
