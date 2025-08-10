@@ -2,29 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Events - Dublin Tech Circuit</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
+    
     <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96"/>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico"/>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="./past-events.js"></script>
-    <link rel="stylesheet" href="./past-events.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
-        <ul class="links">
-            <il><a href="./index.html">Home</a></il>
-            <il><a href="./leaderboard.html">Leaderboard</a></il>
-            <il><a href="./about.html">The Team</a></il>
-            <il><a href="./past-events.html">Past Events</a></il>
-            <il><a href="./register.html">Register</a></il>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="past-events.html">Past Events</a></li>
+            <li><a href="register.html">Register</a></li>
         </ul>
     </div>
 
-    <div id="events-container"></div>
+    <div id="events-container">
+        <!-- Events will be loaded dynamically -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dublin Tech Circuit</h3>
+                <p>
+                    Ireland's premier student-led technology community, fostering collaboration, 
+                    communication, and competition among Dublin's brightest young tech minds.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>🐦 Twitter</span>
+                    </a>
+                    <a href="https://instagram.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>📸 Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com/company/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>💼 LinkedIn</span>
+                    </a>
+                    <a href="https://discord.gg/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>💬 Discord</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">The Team</a>
+                    <a href="past-events.html">Past Events</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get Involved</h4>
+                <ul class="involvement-list">
+                    <li>🏫 Bring DTC to your school</li>
+                    <li>🤝 Become a mentor</li>
+                    <li>💡 Sponsor an event</li>
+                    <li>📢 Share our mission</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@dublintechcircuit.com">info@dublintechcircuit.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Schools:</strong>
+                        <a href="mailto:schools@dublintechcircuit.com">schools@dublintechcircuit.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Sponsors:</strong>
+                        <a href="mailto:partnerships@dublintechcircuit.com">partnerships@dublintechcircuit.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-partners">
+            <p>Proudly supported by:</p>
+            <div class="partner-logos">
+                <img src="google.webp" alt="Google" />
+                <img src="learnovate.svg" alt="Learnovate" />
+                <img src="raspberrypi.svg" alt="Raspberry Pi Foundation" />
+                <img src="simplestudy.svg" alt="Simple Study" />
+                <img src="codetales.svg" alt="CodeTales" />
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="current-year"></span> Dublin Tech Circuit. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="past-events.js"></script>
 </body>
 </html>
