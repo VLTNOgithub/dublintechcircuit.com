@@ -86,7 +86,7 @@
 /* ====== SECTION THREE - UPCOMING EVENTS ====== */
 .section-three {
     padding: 64px 20px;
-    background: linear-gradient(135deg, var(--secondary-dark), transparent);
+    background: rgb(5,5,5);
 }
 
 .upcoming-events h2 {
@@ -162,7 +162,7 @@
 /* ====== SECTION FOUR - SPONSORS ====== */
 .section-four {
     padding: 64px 20px;
-    background: var(--secondary-dark-transparent);
+    background: rgb(5,5,5);
 }
 
 .sponsors-section h2 {
