@@ -357,6 +357,46 @@
 }
 
 /* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .section-two .info {
+        max-width: 100%;
+        transform: translateY(2vmax);
+    }
+
+    .movement-card {
+        width: 300px;
+        height: 220px;
+    }
+
+    .movement-background {
+        width: 250px;
+        height: 170px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .scrolling-background {
+        width: 350px;
+        height: 170px;
+    }
+
+    .movement-text {
+        top: 35px;
+        left: 30px;
+    }
+
+    .movement-regular,
+    .movement-highlight {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 768px) {
     .events-grid,
     .sponsors-grid {
@@ -380,5 +420,51 @@
     .cta-buttons button {
         width: 100%;
         max-width: 300px;
+    }
+
+    .movement-card {
+        width: 280px;
+        height: 200px;
+    }
+
+    .movement-background {
+        width: 230px;
+        height: 150px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .movement-text {
+        top: 25px;
+        left: 25px;
+    }
+
+    .movement-regular,
+    .movement-highlight {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movement-card {
+        width: 250px;
+        height: 180px;
+    }
+
+    .movement-background {
+        width: 200px;
+        height: 130px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .movement-text {
+        top: 20px;
+        left: 20px;
+    }
+
+    .movement-regular,
+    .movement-highlight {
+        font-size: 24px;
     }
 }
