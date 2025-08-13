@@ -55,9 +55,9 @@ async function loadEvents() {
                     pagination: true,
                     gap: "1rem"
                 }).mount();
+            } else {
+                container.appendChild(eventDiv);
             }
-            
-            container.appendChild(eventDiv);
         });
     } catch (e) {
         console.error("Failed to load events:", e);
@@ -65,5 +65,15 @@ async function loadEvents() {
     }
 }
 
+function setCurrentYear() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}
+
 // Start loading events on page load
-window.addEventListener("DOMContentLoaded", loadEvents);
+document.addEventListener("DOMContentLoaded", function() {
+    loadEvents();
+    setCurrentYear();
+});

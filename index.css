@@ -19,8 +19,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%; /* 60%; */
-    width: 60%; /* 80%;*/
+    height: 90%;
+    width: 60%;
     gap: 16px;
     padding: 32px;
 }
@@ -36,8 +36,6 @@
     font-size: var(--normal-text-size);
     text-shadow: 0px 0px 20px var(--secondary-dark);
     text-align: center;
-    /* position: relative;
-    transform: translateX(-21px); */
 }
 
 /* ====== SECTION TWO ====== */
@@ -87,10 +85,220 @@
     filter: grayscale(70%);
 }
 
-/* ====== SCALING STUFF ====== */
-/* @media (max-width: 1235px) {
-    .hero {
-        height: 60%;
-        width: 80%;
+/* ====== SECTION THREE - UPCOMING EVENTS ====== */
+.section-three {
+    padding: 64px 20px;
+    background: rgb(5,5,5);
+}
+
+.upcoming-events h2 {
+    font-size: var(--header-text-size);
+    text-align: center;
+    color: var(--header);
+    margin-bottom: 48px;
+}
+
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.event-card {
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    transition: transform 0.2s ease;
+    flex-direction: column;
+    max-width: 350px;
+    flex: 1 1 350px;
+}
+
+.event-card:hover {
+    transform: translateY(var(--hover-distance));
+    box-shadow: inset 0 0 20px var(--secondary), 0 0 15px var(--primary);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 16px;
+    background: var(--primary);
+    border-radius: 12px;
+    color: var(--background);
+}
+
+.event-date .month {
+    font-size: var(--small-text-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h3 {
+    color: var(--header);
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.event-info p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.event-location {
+    color: var(--primary);
+    font-size: var(--small-text-size);
+    font-weight: 600;
+}
+
+/* ====== SECTION FOUR - SPONSORS ====== */
+.section-four {
+    padding: 64px 20px;
+    background: rgb(5,5,5);
+}
+
+.sponsors-section h1 {
+    font-size: var(--header-text-size);
+    text-align: center;
+    color: var(--header);
+    margin-bottom: 24px;
+}
+
+.sponsors-section > p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px auto;
+    line-height: 1.6;
+}
+
+.sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.sponsor-card {
+    transition: 0.2s ease-in-out;
+}
+.sponsor-card:hover {
+    transform: translateY(var(--hover-distance));
+    background: var(--pentagon-accent) no-repeat center/contain;
+}
+
+.sponsor-card:hover img {
+    filter: brightness(1);
+}
+
+.sponsor-card h4 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.sponsor-card p {
+    font-size: var(--small-text-size);
+    line-height: 1.5;
+}
+
+/* ====== SECTION FIVE - CTA ====== */
+.section-five {
+    padding: 64px 20px;
+}
+
+.cta-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-card {
+    padding: 48px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary-dark), var(--secondary));
+}
+
+.cta-card h2 {
+    font-size: var(--header-text-size);
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.cta-card p {
+    font-size: var(--normal-text-size);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons button {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.secondary-btn {
+    background-color: transparent !important;
+    border: 2px solid var(--accent) !important;
+    color: var(--accent);
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent) !important;
+    color: var(--background);
+    box-shadow: inset 0 0 25px var(--secondary), 0 0 8px var(--accent);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
     }
-} */
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    .events-grid, .sponsors-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-card {
+        max-width: 100%;
+    }
+    .event-date {
+        align-self: center;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-buttons button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors-grid {
+        gap: 12px;
+    }
+}

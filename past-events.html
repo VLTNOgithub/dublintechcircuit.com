@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Events - Dublin Tech Circuit</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
+    
     <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96"/>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico"/>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="./past-events.js"></script>
-    <link rel="stylesheet" href="./past-events.css">
+    <link rel="stylesheet" href="past-events.css">
 </head>
 <body>
     <div class="navbar">
-        <ul class="links">
-            <il><a href="./index.html">Home</a></il>
-            <il><a href="./leaderboard.html">Leaderboard</a></il>
-            <il><a href="./about.html">The Team</a></il>
-            <il><a href="./past-events.html">Past Events</a></il>
-            <il><a href="./register.html">Register</a></il>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="past-events.html">Past Events</a></li>
+            <li><a href="register.html">Register</a></li>
         </ul>
     </div>
 
-    <div id="events-container"></div>
+    <div id="events-container">
+        <!-- Events will be loaded dynamically -->
+    </div>
+
+    <!-- Footer -->
+    
+
+    <script src="past-events.js"></script>
 </body>
 </html>

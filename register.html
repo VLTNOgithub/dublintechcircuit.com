@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Dublin Tech Circuit</title>
+    
+    <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96"/>
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico"/>
+    
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="past-events.html">Past Events</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <div class="register-container">
+        <section class="register-hero">
+            <div class="hero-content">
+                <h1>Join Dublin Tech Circuit</h1>
+                <p class="hero-subtitle">
+                    Ready to collaborate, communicate, and compete? Register now to become part of Ireland's 
+                    premier student-led tech community.
+                </p>
+            </div>
+        </section>
+
+        <section class="registration-form-section">
+            <div class="narrow">
+                <form id="registration-form" class="registration-form styled-shape">
+                    <h2>Student Registration</h2>
+                    
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName">Full Name *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="school">School *</label>
+                                <select id="school" name="school" required>
+                                    <option value="">Select your school</option>
+                                    <option value="Belvedere College">Belvedere College</option>
+                                    <option value="Blackrock College">Blackrock College</option>
+                                    <option value="Drimnagh Castle Secondary School">Drimnagh Castle Secondary School</option>
+                                    <option value="Gonzaga College">Gonzaga College</option>
+                                    <option value="Holy Child Killiney">Holy Child Killiney</option>
+                                    <option value="Loreto College St. Stephen's Green">Loreto College St. Stephen's Green</option>
+                                    <option value="Marian College">Marian College</option>
+                                    <option value="Mount Anville Secondary School">Mount Anville Secondary School</option>
+                                    <option value="St. Michael's College">St. Michael's College</option>
+                                    <option value="Other">Other (please specify)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="yearGroup">Year Group *</label>
+                                <select id="yearGroup" name="yearGroup" required>
+                                    <option value="">Select year group</option>
+                                    <option value="1st Year">1st Year</option>
+                                    <option value="2nd Year">2nd Year</option>
+                                    <option value="3rd Year">3rd Year</option>
+                                    <option value="4th Year">4th Year (TY)</option>
+                                    <option value="5th Year">5th Year</option>
+                                    <option value="6th Year">6th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Interests -->
+                    <div class="form-section">
+                        <h3>Technology Interests</h3>
+                        <p>Select all areas that interest you:</p>
+                        <div class="checkbox-grid" id="interests-grid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="form-section">
+                        <h3>Experience Level</h3>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="experience" value="Beginner">
+                                <span class="radio-mark"></span>
+                                <div>
+                                    <strong>Beginner</strong>
+                                    <p>New to coding and tech</p>
+                                </div>
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="experience" value="Intermediate">
+                                <span class="radio-mark"></span>
+                                <div>
+                                    <strong>Intermediate</strong>
+                                    <p>Some coding experience, familiar with basic concepts</p>
+                                </div>
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="experience" value="Advanced">
+                                <span class="radio-mark"></span>
+                                <div>
+                                    <strong>Advanced</strong>
+                                    <p>Experienced coder, comfortable with multiple languages/frameworks</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Team Information -->
+                    <div class="form-section">
+                        <h3>Team Information (Optional)</h3>
+                        <div class="form-group">
+                            <label for="teamName">Team Name</label>
+                            <input type="text" id="teamName" name="teamName" placeholder="Leave blank if registering individually">
+                        </div>
+                        <div class="form-group">
+                            <label for="teamMembers">Other Team Members</label>
+                            <textarea id="teamMembers" name="teamMembers" placeholder="List names of other team members (if applicable)" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Event Selection -->
+                    <div class="form-section">
+                        <h3>Event Registration</h3>
+                        <div class="form-group">
+                            <label for="eventType">Which event would you like to attend first?</label>
+                            <select id="eventType" name="eventType">
+                                <option value="">I'm interested in all events</option>
+                                <option value="winter2025">Winter Tech Championship 2025 (February 15, 2025)</option>
+                                <option value="spring2025">Spring Innovation Summit (April 12, 2025)</option>
+                                <option value="coding2025">Dublin Coding Marathon (May 20, 2025)</option>
+                                <option value="summer2025">Summer Tech Showcase (June 28, 2025)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="dietaryRequirements">Dietary Requirements/Allergies</label>
+                            <textarea id="dietaryRequirements" name="dietaryRequirements" placeholder="Please list any dietary requirements or allergies" rows="2"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="form-section">
+                        <h3>Consent & Agreement</h3>
+                        <label class="checkbox-item consent-item">
+                            <input type="checkbox" name="parentalConsent" required>
+                            <span class="checkmark"></span>
+                            <span>I confirm that I have parental/guardian consent to participate in Dublin Tech Circuit events *</span>
+                        </label>
+                        <label class="checkbox-item consent-item">
+                            <input type="checkbox" name="dataProcessing" required>
+                            <span class="checkmark"></span>
+                            <span>I agree to the processing of my personal data for event coordination and communication purposes *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit">
+                        Complete Registration
+                    </button>
+                </form>
+
+                <!-- Success message (hidden initially) -->
+                <div id="success-message" class="success-section" style="display: none;">
+                    <div class="narrow">
+                        <div class="styled-shape success-card">
+                            <h1>🎉 Registration Successful!</h1>
+                            <p>
+                                Thank you for registering with Dublin Tech Circuit! We're excited to have you join our community.
+                            </p>
+                            <div class="success-details">
+                                <h3>What happens next?</h3>
+                                <ul>
+                                    <li>✅ You'll receive a confirmation email within 24 hours</li>
+                                    <li>📧 Event details will be sent to your registered email</li>
+                                    <li>🤝 You'll be added to our community Discord server</li>
+                                    <li>📅 Calendar invites will be sent for upcoming events</li>
+                                </ul>
+                            </div>
+                            <button onclick="window.location.reload()" class="register-another-btn">
+                                Register Another Student
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="narrow">
+                <div class="info-cards">
+                    <div class="info-card styled-shape">
+                        <h3>🎯 What to Expect</h3>
+                        <ul>
+                            <li>Hands-on technology workshops</li>
+                            <li>Collaborative team challenges</li>
+                            <li>Networking with like-minded students</li>
+                            <li>Mentorship from industry professionals</li>
+                            <li>Recognition and awards</li>
+                        </ul>
+                    </div>
+                    <div class="info-card styled-shape">
+                        <h3>📅 Upcoming Events</h3>
+                        <ul>
+                            <li><strong>Winter Tech Championship 2025</strong><br>February 15, 2025</li>
+                            <li><strong>Spring Innovation Summit</strong><br>April 12, 2025</li>
+                            <li><strong>Dublin Coding Marathon</strong><br>May 20, 2025</li>
+                            <li><strong>Summer Tech Showcase</strong><br>June 28, 2025</li>
+                        </ul>
+                    </div>
+                    <div class="info-card styled-shape">
+                        <h3>💬 Questions?</h3>
+                        <p>
+                            Need help with registration or have questions about our events? 
+                            Contact us at <strong>info@dublintechcircuit.com</strong> or 
+                            reach out on our social media channels.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dublin Tech Circuit</h3>
+                <p>
+                    Ireland's premier student-led technology community, fostering collaboration, 
+                    communication, and competition among Dublin's brightest young tech minds.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>🐦 Twitter</span>
+                    </a>
+                    <a href="https://instagram.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>📸 Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com/company/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>💼 LinkedIn</span>
+                    </a>
+                    <a href="https://discord.gg/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>💬 Discord</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">The Team</a>
+                    <a href="past-events.html">Past Events</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get Involved</h4>
+                <ul class="involvement-list">
+                    <li>🏫 Bring DTC to your school</li>
+                    <li>🤝 Become a mentor</li>
+                    <li>💡 Sponsor an event</li>
+                    <li>📢 Share our mission</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@dublintechcircuit.com">info@dublintechcircuit.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Schools:</strong>
+                        <a href="mailto:schools@dublintechcircuit.com">schools@dublintechcircuit.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Sponsors:</strong>
+                        <a href="mailto:partnerships@dublintechcircuit.com">partnerships@dublintechcircuit.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-partners">
+            <p>Proudly supported by:</p>
+            <div class="partner-logos">
+                <img src="google.webp" alt="Google" />
+                <img src="learnovate.svg" alt="Learnovate" />
+                <img src="raspberrypi.svg" alt="Raspberry Pi Foundation" />
+                <img src="simplestudy.svg" alt="Simple Study" />
+                <img src="codetales.svg" alt="CodeTales" />
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; <span id="current-year"></span> Dublin Tech Circuit. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>
