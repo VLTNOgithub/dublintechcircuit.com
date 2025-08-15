@@ -7,12 +7,14 @@
     
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     
     <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="96x96"/>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico"/>
     
     <link rel="stylesheet" href="index.css">
-
+    
+    <script src="general.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
@@ -104,7 +106,7 @@
                     <div class="sponsor-card pentagon-bg"><img src="./assets/raspberrypi.svg" alt="Raspberry Pi Foundation"/></div>
                     <div class="sponsor-card pentagon-bg"><img src="./assets/simplestudy.svg" alt="Simple Study"/></div>
                     <div class="sponsor-card pentagon-bg"><img src="./assets/codetales.svg" alt="CodeTales" /></div>
-                    <div class="sponsor-card pentagon-bg"><img src="./assets/tap.png" alt="TAP"/></div>
+                    <div class="sponsor-card pentagon-bg"><img style="width: 80px;" src="./assets/tap.png" alt="TAP"/></div>
                 </div>
             </div>
         </div>
@@ -136,19 +138,28 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Dublin Tech Circuit</h3>
+                <div class="footer-title">
+                    <img src="./assets/icons/DTC White Transparent No Text.png" width="80px">
+                    <h3>Dublin Tech Circuit</h3>
+                </div>
                 <p>
                     Ireland's premier student-led technology community, fostering collaboration, 
                     communication, and competition among Dublin's brightest young tech minds.
                 </p>
                 <div class="social-links">
-                    <a href="https://twitter.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/dubtechcircuit" target="_blank" rel="noopener noreferrer">
                         <span>Twitter</span>
                     </a>
                     <a href="https://instagram.com/dublintechcircuit" target="_blank" rel="noopener noreferrer">
                         <span>Instagram</span>
                     </a>
-                    <a href="https://discord.gg/dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@dublintechcircuit" target="_blank" rel="noopener noreferrer">
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://www.youtube.com/@DublinTechCircuit" target="_blank" rel="noopener noreferrer">
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://discord.gg/AVs2Yb7RrW" target="_blank" rel="noopener noreferrer">
                         <span>Discord</span>
                     </a>
                 </div>
@@ -169,15 +180,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>Email:</strong>
-                        <a href="mailto:info@dublintechcircuit.com">info@dublintechcircuit.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Schools:</strong>
-                        <a href="mailto:schools@dublintechcircuit.com">schools@dublintechcircuit.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Sponsors:</strong>
-                        <a href="mailto:partnerships@dublintechcircuit.com">partnerships@dublintechcircuit.com</a>
+                        <a href="mailto:dublintechcircuit@gmail.com">dublintechcircuit@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -186,11 +189,11 @@
         <div class="footer-partners">
             <p>Proudly supported by:</p>
             <div class="partner-logos">
-                <img src="google.webp" alt="Google" />
-                <img src="learnovate.svg" alt="Learnovate" />
-                <img src="raspberrypi.svg" alt="Raspberry Pi Foundation" />
-                <img src="simplestudy.svg" alt="Simple Study" />
-                <img src="codetales.svg" alt="CodeTales" />
+                <img src="./assets/google.webp" alt="Google" />
+                <img src="./assets/learnovate.svg" alt="Learnovate" />
+                <img src="./assets/raspberrypi.svg" alt="Raspberry Pi Foundation" />
+                <img src="./assets/simplestudy.svg" alt="Simple Study" />
+                <img src="./assets/codetales.svg" alt="CodeTales" />
             </div>
         </div>
 

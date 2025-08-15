@@ -9,7 +9,7 @@ function setupCollage() {
         collageItem.className = 'collage-item';
         
         const img = document.createElement('img');
-        img.src = `./assets/collage/collage${i.toString().padStart(2, '0')}.png`;
+        img.src = `./assets/collage/collage${i.toString().padStart(2, '0')}.webp`;
         img.alt = `Collage ${i}`;
         
         collageItem.appendChild(img);
