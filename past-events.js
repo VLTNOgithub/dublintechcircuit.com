@@ -65,15 +65,7 @@ async function loadEvents() {
     }
 }
 
-function setCurrentYear() {
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-}
-
 // Start loading events on page load
 document.addEventListener("DOMContentLoaded", function() {
     loadEvents();
-    setCurrentYear();
 });

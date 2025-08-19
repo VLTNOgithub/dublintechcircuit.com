@@ -1,7 +1,7 @@
 :root {
     --header: #FFFFFF;
     --text: #DDDDDD;
-    --background: #050505;
+    --background: #000000;
     --primary: #879f3c;
     --secondary: #2d6678;
     --accent: #bada55;
@@ -10,6 +10,17 @@
 
     --secondary-dark: #0b191e;
     --secondary-dark-transparent: rgb(from var(--secondary-dark) r g b / 25%);
+
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-md: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 2rem;      /* 32px */
+    --font-size-4xl: 2.5rem;    /* 40px */
+    --font-size-5xl: 3rem;      /* 48px */
+    --font-size-display: 8rem;  /* 128px */
 
     --small-text-size: 0.875rem;
     --normal-text-size: 1rem;
@@ -30,10 +41,10 @@
 /* ====== ANIMATIONS ====== */
 @keyframes pan {
     0% {
-        transform: translateX(-25%);
+        transform: translateX(-35%);
     }
     100% {
-        transform: translateX(25%);
+        transform: translateX(34%);
     }
 }
 
@@ -52,7 +63,7 @@ body {
     background-color: var(--background);
     color: var(--text);
     font-family: Verdana;
-    font-size: var(--normal-text-size);
+    font-size: var(--font-size-md);
 
     width: 100%;
     height: 100%;
@@ -82,8 +93,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary);
-    text-shadow: 0 0 8px var(--primary);
+    text-shadow: 0 0 8px var(--text);
 }
 
 a:active {
@@ -97,11 +107,12 @@ ul {
 
 p, button {
     color: var(--text);
-    font-size: var(--normal-text-size);
+    font-size: var(--font-size-md);
 }
 
 h1 {
-    font-size: var(--header-text-size);
+    font-size: var(--font-size-5xl);
+    color: var(--header);
 }
 
 button {
@@ -110,21 +121,20 @@ button {
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.4) !important;
     backdrop-filter: blur(var(--blur));
-    color: var(--text);
+    color: var(--header);
     border-radius: 30px;
     box-shadow: inset 0 0 15px var(--secondary), 0 0 5px var(--primary);
     border: 2px solid var(--primary) !important;
     user-select: none;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in-out;
+    transition: 100ms ease-in-out;
     cursor: pointer;
+    font-size: var(--font-size-lg);
 }
 
 button:enabled:hover {
     cursor: pointer;
     box-shadow: inset 0 0 25px var(--secondary), 0 0 8px var(--primary);
-    border: 2px solid var(--primary) !important;
-    color: var(--header);
+    border: 2px solid var(--accent) !important;
 }
 
 button:enabled:active {
@@ -152,7 +162,7 @@ button:disabled {
     position: absolute;
     background-color: var(--secondary);
 
-    mask-image: url("/tiled-stars.svg");
+    mask-image: url("./assets/tiled-stars.svg");
     mask-repeat: repeat;
     mask-size: var(--pattern-size);
 
@@ -160,7 +170,7 @@ button:disabled {
 
     opacity: 25%;
 
-    width: 200%;
+    width: 400%;
     height: 100%;
 
     border-radius: 30px;
@@ -179,14 +189,14 @@ button:disabled {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 300;
     color: var(--primary);
     transition-duration: 200ms;
 }
 
 strong:hover {
     color: var(--accent);
-    text-shadow: 0 0 8px var(--secondary);
+    text-shadow: 0 0 8px var(--primary);
 }
 
 .styled-shape {
@@ -196,13 +206,18 @@ strong:hover {
     border-radius: 30px;
     box-shadow: inset 0 0 15px var(--secondary), 0 0 5px var(--secondary);
     border: 2px solid var(--primary);
+    transition: 0.2s ease-in-out;
+}
+
+.styled-shape:hover {
+    box-shadow: inset 0 0 15px var(--secondary), 0 0 5px var(--primary);
 }
 
 .hexagon-bg:before, .pentagon-bg:before {
     position: absolute;
     z-index: -1;
     pointer-events: none;
-    transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+    transition: 0.4s ease-in-out;
     opacity: 0.7;
     filter: blur(0.5px);
 }
@@ -242,7 +257,7 @@ strong:hover {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: #000000;
+    background: linear-gradient(0deg, #000000 0%, var(--secondary-dark) 75%);
 }
 
 .navbar .nav-links {
@@ -250,7 +265,7 @@ strong:hover {
     align-items: flex-end;
     justify-content: flex-end;
     gap: 24px;
-    font-size: var(--small-text-size);
+    font-size: var(--font-size-sm);
     padding-right: 32px;
 }
 
@@ -268,7 +283,7 @@ strong:hover {
     display: flex;
     gap: 32px;
     align-items: flex-start;
-    padding: 48px 32px 24px 32px;
+    padding: 48px 24px 24px 24px;
     width: 100%;
     width: 100%;
     border-top: 1px solid var(--secondary);
@@ -299,7 +314,7 @@ strong:hover {
 
 .footer-section h3 {
     color: var(--header);
-    font-size: 1.25rem;
+    font-size: var(--font-size-xl);
 }
 
 .footer-section .footer-title {
@@ -315,9 +330,13 @@ strong:hover {
     align-items: center;
     padding: 24px;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     color: var(--text);
     border-top: 1px solid var(--secondary);
+}
+
+.footer-bottom-content > p {
+    font-size: var(--font-size-sm);
 }
 
 .footer-legal {
@@ -359,7 +378,10 @@ strong:hover {
     display: none;
     position: fixed;
     z-index: 9999;
-    left: 0; top: 0; width: 100vw; height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.7);
     align-items: center; justify-content: center;
     opacity: 0;
@@ -394,11 +416,11 @@ strong:hover {
 
 .popup-modal-close {
     position: absolute;
-    top: 12px; right: 18px;
+    top: 12px;
+    right: 18px;
     background: none;
     border: none;
-    font-size: 2rem;
-    cursor: pointer;
+    font-size: var(--font-size-3xl);
 }
 
 .popup-modal h2 {
@@ -445,13 +467,17 @@ body.modal-open {
 }
 
 /* ====== RESPONSIVE DESIGN ====== */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
+    :root {
+        font-size: 24px;
+    }
+
     .hero-content h1, .about-hero h1, .leaderboard-hero h1, .register-hero h1 {
-        font-size: 3rem;
+        font-size: var(--font-size-5xl);
     }
     
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: var(--font-size-2xl);
     }
     
     .mission-stats, .season-stats {
@@ -500,10 +526,24 @@ body.modal-open {
         width: 100%;
         max-width: 300px;
     }
+
+    .footer {
+        word-wrap: break-word;
+    }
     
     .footer-content {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .contact-item a {
+        word-break: break-all;
     }
     
     .social-links {
@@ -534,21 +574,5 @@ body.modal-open {
     
     .mission-card, .ranking-card, .category-card, .scoring-info, .registration-form, .success-card, .info-card {
         padding: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .social-links a {
-        font-size: 0.75rem;
-        padding: 6px 8px;
-    }
-    
-    .partner-logos {
-        gap: 12px;
-    }
-    
-    .footer-legal {
-        flex-direction: column;
-        gap: 8px;
     }
 }

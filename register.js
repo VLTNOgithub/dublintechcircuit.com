@@ -67,16 +67,8 @@ function handleFormSubmit(event) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function setCurrentYear() {
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     renderInterests();
-    setCurrentYear();
     
     // Add form submit handler
     const form = document.getElementById('registration-form');

@@ -69,7 +69,7 @@
 }
 
 .stat strong {
-    font-size: 2.5rem;
+    font-size: var(--font-size-4xl);
     color: var(--accent);
     text-shadow: 0 0 10px var(--primary);
 }
@@ -115,7 +115,7 @@
 }
 
 .member-header h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
     color: var(--header);
     margin-bottom: 8px;
 }
@@ -182,7 +182,7 @@
 }
 
 .value-card h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
     margin-bottom: 16px;
     color: var(--primary);
 }
@@ -225,10 +225,10 @@
 
 @media (max-width: 768px) {
     .about-hero h1 {
-        font-size: 3rem;
+        font-size: var(--font-size-5xl);
     }
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: var(--font-size-2xl);
     }
     .mission-stats {
         flex-direction: column;

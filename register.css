@@ -55,7 +55,7 @@
 }
 
 .form-section h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
     color: var(--primary);
     margin-bottom: 24px;
 }
@@ -155,7 +155,7 @@
     transform: translate(-50%, -50%);
     color: var(--header);
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
 }
 
 .radio-group {
@@ -328,7 +328,7 @@
 
 @media (max-width: 768px) {
     .register-hero h1 {
-        font-size: 3rem;
+        font-size: var(--font-size-5xl);
     }
     .form-row {
         grid-template-columns: 1fr;

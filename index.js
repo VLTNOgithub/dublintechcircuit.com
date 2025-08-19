@@ -16,8 +16,6 @@ function setupCollage() {
         collage.appendChild(collageItem);
     }
 
-    collage.style.position = "absolute";
-
     // Watch the collage for all images to load
     imagesLoaded(collage, function() {
         console.log("All images loaded, now running Masonry!");
@@ -36,16 +34,6 @@ function setupCollage() {
             item.style.zIndex = Math.floor(Math.random() * 5);
         });
     });
-
-    collage.style.position = "absolute";
-}
-
-// Set current year in footer
-function setCurrentYear() {
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
 }
 
 // Initialize when DOM is loaded

@@ -43,14 +43,6 @@ function renderTeamMembers() {
     });
 }
 
-function setCurrentYear() {
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     renderTeamMembers();
-    setCurrentYear();
 });

@@ -58,9 +58,18 @@ function hideModal(modal) {
     }, 300);
 }
 
+// Set current year in footer
+function setCurrentYear() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}
+
 // Attach click handlers for #terms and #privacy links
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Loaded");
+    setCurrentYear();
     document.querySelectorAll("a[href='#terms']").forEach(link => {
         link.addEventListener("click", e => {
             e.preventDefault();
