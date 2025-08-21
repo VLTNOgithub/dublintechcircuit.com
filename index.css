@@ -136,89 +136,11 @@
     width: 10vmax;
     height: auto;
     filter: grayscale(40%) brightness(50%);
+    fill: cover;
 }
 
-/* ====== SECTION THREE - UPCOMING EVENTS ====== */
+/* ====== SECTION THREE - SPONSORS ====== */
 .section-three {
-    padding: 64px 20px;
-}
-
-.upcoming-events h2 {
-    font-size: var(--font-size-5xl);
-    text-align: center;
-    color: var(--header);
-    margin-bottom: 48px;
-}
-
-.events-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-}
-
-.event-card {
-    padding: 32px;
-    display: flex;
-    gap: 24px;
-    transition: transform 0.2s ease;
-    flex-direction: column;
-    max-width: 350px;
-    flex: 1 1 350px;
-}
-
-.event-card:hover {
-    transform: translateY(var(--hover-distance));
-    box-shadow: inset 0 0 20px var(--secondary), 0 0 15px var(--primary);
-}
-
-.event-date {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
-    padding: 16px;
-    background: var(--primary);
-    border-radius: 12px;
-    color: var(--background);
-}
-
-.event-date .month {
-    font-size: var(--font-size-sm);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.event-date .day {
-    font-size: var(--font-size-3xl);
-    font-weight: bold;
-    margin-top: 4px;
-}
-
-.event-info {
-    flex: 1;
-}
-
-.event-info h3 {
-    color: var(--header);
-    margin-bottom: 12px;
-    font-size: var(--font-size-lg);
-}
-
-.event-info p {
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.event-location {
-    color: var(--primary);
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-}
-
-/* ====== SECTION FOUR - SPONSORS ====== */
-.section-four {
     padding: 64px 20px;
 }
 
@@ -260,8 +182,8 @@
     filter: brightness(1);
 }
 
-/* ====== SECTION FIVE - CTA ====== */
-.section-five {
+/* ====== SECTION FOUR - CTA ====== */
+.section-four {
     padding: 64px 20px;
 }
 
