@@ -84,11 +84,20 @@
 
 .section-two .info {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1.25fr;
     grid-auto-rows: 500px;
     width: 80%;
     gap: 48px;
     align-items: stretch;
+=======
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+    width: 70%;
+    gap: 64px;
+    row-gap: 64px;
+    align-items: center;
+>>>>>>> refs/remotes/origin/react
 }
 
 .section-two .info .styled-shape {
@@ -104,9 +113,13 @@
 }
 
 .section-two .info img {
+<<<<<<< HEAD
     width: 100%;
     height: 100%;
     object-fit: cover;
+=======
+    height: 100%;
+>>>>>>> refs/remotes/origin/react
     border-radius: 30px;
     border: 2px solid var(--secondary);
     box-shadow: inset 0 0 30px var(--secondary-dark), 0 0 5px var(--secondary);
@@ -139,11 +152,97 @@
     filter: grayscale(40%) brightness(50%);
 }
 
+<<<<<<< HEAD
 /* ====== SECTION THREE - SPONSORS ====== */
+=======
+/* ====== SECTION THREE - UPCOMING EVENTS ====== */
+>>>>>>> refs/remotes/origin/react
 .section-three {
     padding: 64px 20px;
 }
 
+<<<<<<< HEAD
+=======
+.upcoming-events h2 {
+    font-size: var(--font-size-5xl);
+    text-align: center;
+    color: var(--header);
+    margin-bottom: 48px;
+}
+
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.event-card {
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    transition: transform 0.2s ease;
+    flex-direction: column;
+    max-width: 350px;
+    flex: 1 1 350px;
+}
+
+.event-card:hover {
+    transform: translateY(var(--hover-distance));
+    box-shadow: inset 0 0 20px var(--secondary), 0 0 15px var(--primary);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 16px;
+    background: var(--primary);
+    border-radius: 12px;
+    color: var(--background);
+}
+
+.event-date .month {
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h3 {
+    color: var(--header);
+    margin-bottom: 12px;
+    font-size: var(--font-size-lg);
+}
+
+.event-info p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.event-location {
+    color: var(--primary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+/* ====== SECTION FOUR - SPONSORS ====== */
+.section-four {
+    padding: 64px 20px;
+}
+
+>>>>>>> refs/remotes/origin/react
 .sponsors-section h1 {
     font-size: var(--font-size-5xl);
     text-align: center;
@@ -182,8 +281,13 @@
     filter: brightness(1);
 }
 
+<<<<<<< HEAD
 /* ====== SECTION FOUR - CTA ====== */
 .section-four {
+=======
+/* ====== SECTION FIVE - CTA ====== */
+.section-five {
+>>>>>>> refs/remotes/origin/react
     padding: 64px 20px;
 }
 
@@ -219,6 +323,7 @@
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1200px) {
     .section-two .info {
         width: 90%;
@@ -243,6 +348,15 @@
         max-width: 500px;
         margin: 0 auto;
     }
+=======
+@media (max-width: 1080px) {
+    .hero-content h1 {
+        font-size: var(--font-size-5xl);
+    }
+    .hero-subtitle {
+        font-size: var(--font-size-2xl);
+    }
+>>>>>>> refs/remotes/origin/react
     .events-grid, .sponsors-grid {
         flex-direction: column;
         align-items: center;
@@ -263,8 +377,11 @@
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .section-two {
         padding: 32px 16px;
     }
 }
+=======
+>>>>>>> refs/remotes/origin/react

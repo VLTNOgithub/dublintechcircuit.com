@@ -1,5 +1,6 @@
 @import url("./general.css");
 
+/* ====== PAST EVENTS PAGE STYLES ====== */
 #events-container {
     color: #eee;
     font-family: Arial, sans-serif;
@@ -18,6 +19,7 @@
     color: var(--text);
     font-size: var(--header-text-size);
     margin-bottom: 2rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -101,4 +103,10 @@
 
 .splide__pagination__page.is-active {
     background: #bada55;
+}
+
+@media (max-width: 768px) {
+    .event {
+        padding: 24px;
+    }
 }
