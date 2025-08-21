@@ -1,0 +1,343 @@
+@import url("./general.css");
+
+/* ====== REGISTER PAGE STYLES ====== */
+.register-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.register-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    padding: 64px 20px;
+    text-align: center;
+}
+
+.register-hero .hero-subtitle {
+    font-size: var(--normal-text-size);
+    color: var(--secondary-dark);
+    text-shadow: 0px 0px 10px var(--background);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.registration-form-section {
+    padding: 64px 20px;
+}
+
+.registration-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form h2 {
+    font-size: var(--header-text-size);
+    margin-bottom: 32px;
+    text-align: center;
+    color: var(--header);
+}
+
+.form-section {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.form-section:last-child {
+    border-bottom: none;
+}
+
+.form-section h3 {
+    font-size: var(--font-size-2xl);
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid var(--secondary);
+    background: var(--secondary-dark-transparent);
+    color: var(--header);
+    font-size: var(--normal-text-size);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px var(--primary);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text);
+    opacity: 0.7;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--secondary-dark-transparent);
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkbox-item:hover {
+    border-color: var(--primary);
+    background: var(--secondary-transparent);
+}
+
+.checkbox-item input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary);
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkmark {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.checkbox-item input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--header);
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--secondary-dark-transparent);
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio-item:hover {
+    border-color: var(--primary);
+    background: var(--secondary-transparent);
+}
+
+.radio-item input[type="radio"] {
+    display: none;
+}
+
+.radio-mark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: all 0.2s ease;
+}
+
+.radio-item input[type="radio"]:checked + .radio-mark {
+    border-color: var(--primary);
+}
+
+.radio-item input[type="radio"]:checked + .radio-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.radio-item div {
+    flex: 1;
+}
+
+.radio-item strong {
+    color: var(--header);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.radio-item p {
+    font-size: var(--small-text-size);
+    color: var(--text);
+    margin: 0;
+}
+
+.consent-item {
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.consent-item span:last-child {
+    font-size: var(--small-text-size);
+    line-height: 1.4;
+}
+
+.success-section {
+    padding: 64px 20px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.success-card {
+    padding: 48px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.success-card h1 {
+    font-size: var(--header-text-size);
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.success-details {
+    margin: 32px 0;
+    text-align: left;
+}
+
+.success-details h3 {
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.success-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.success-details li {
+    padding: 8px 0;
+    font-size: var(--normal-text-size);
+}
+
+.register-another-btn {
+    margin-top: 24px;
+    padding: 12px 24px;
+    background: var(--secondary);
+    border: 2px solid var(--primary);
+    color: var(--text);
+}
+
+.info-section {
+    padding: 64px 20px;
+    background: linear-gradient(135deg, var(--secondary-dark-transparent), transparent);
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.info-card {
+    padding: 32px;
+}
+
+.info-card h3 {
+    color: var(--primary);
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    padding: 6px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--secondary);
+}
+
+.info-card li:last-child {
+    border-bottom: none;
+}
+
+.info-card strong {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .register-hero h1 {
+        font-size: var(--font-size-5xl);
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+    .registration-form, .success-card, .info-card {
+        padding: 24px;
+    }
+}
